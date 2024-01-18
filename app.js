@@ -20,8 +20,8 @@ app.use("/user", user);
 
 const PORT = process.env.PORT || 3000;
 
-app.post("/", (req, res) => {
-  res.json("<center><h1>Server is up and running</h1></center>");
+app.get("/", (req, res) => {
+  res.send("<center><h1>Server is up and running</h1></center>");
 });
 
 app.listen(PORT, () => {
