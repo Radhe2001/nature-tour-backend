@@ -17,7 +17,7 @@ const router = express.Router();
 router.post("/adminlogin", (req, res) => {
   if (
     req.body.email == process.env.ADMIN &&
-    req.body.password == process.env.pass
+    req.body.password == process.env.PASS
   ) {
     res.status(200).json("success");
   } else {
